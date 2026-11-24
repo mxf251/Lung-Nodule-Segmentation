@@ -70,5 +70,5 @@ class UNet(nn.Module):
             x = torch.cat([skip, x], dim=1)
             x = self.ups[i + 1](x) # 再卷一下
 
-        # 4. 输出最终结果
+        # 4.输出最终结果
         return self.head(x)
