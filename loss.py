@@ -21,5 +21,5 @@ class DiceLoss(nn.Module):
         # 4. Dice 公式：(2 * 交集) / (预测总和 + 真实总和)
         dice = (2.0 * intersection + self.smooth) / (predictions.sum() + targets.sum() + self.smooth)
 
-        # 5. Loss 越小越好，所以用 1 减去 dice
+        # 5. Loss 越小越好，所以用 1 减去dice
         return 1 - dice

@@ -60,7 +60,7 @@ for epoch in range(EPOCHS):
     print(f"=== Epoch {epoch + 1} 结束, 平均 Dice Loss: {avg_loss:.4f} ===")
 
 # ================= 5. 保存模型权重 =================
-# 建个 weights 文件夹存起来
+# 建个 weights 文件夹保存
 os.makedirs("weights", exist_ok=True)
 torch.save(model.state_dict(), "weights/unet_epoch10.pth")
 print("训练结束，模型已保存到 weights/unet_epoch10.pth")
