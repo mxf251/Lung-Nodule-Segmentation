@@ -5,3 +5,5 @@ __pycache__/
 *.jpg
 *.pth
 RIDER_Lung_CT/
+check-files.py
+test_gpu.py
