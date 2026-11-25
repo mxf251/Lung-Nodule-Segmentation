@@ -7,3 +7,13 @@ __pycache__/
 RIDER_Lung_CT/
 check-files.py
 test_gpu.py
+# 忽略临时测试脚本
+check-files.py
+test-model.py
+test_gpu.py
+test-dataset.py
+
+# 忽略生成的预测图和权重
+predictions/
+weights/
+test_prediction_result.png
